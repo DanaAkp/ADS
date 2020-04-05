@@ -23,5 +23,10 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,5 +23,15 @@ namespace WpfApp2
         {
             InitializeComponent();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

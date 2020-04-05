@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Security.Permissions;
+using System.Security.Principal;
 
 namespace WpfApp2
 {
@@ -34,7 +37,7 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new SalesDepartmentWindow().ShowDialog();
+            new Department_Sales().ShowDialog();
 
         }
 
@@ -46,7 +49,7 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new AccountingWindow().ShowDialog();
+            new Department_Accounting().ShowDialog();
 
         }
 
@@ -58,7 +61,7 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new HumanResourcesDepartmentWindow().ShowDialog();
+            new Department_Personnel().ShowDialog();
 
         }
     }

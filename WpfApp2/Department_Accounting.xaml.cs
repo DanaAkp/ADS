@@ -26,6 +26,7 @@ namespace WpfApp2
 
         private void Window_Closed(object sender, EventArgs e)
         {
+            object win = this.Parent;
 
         }
 

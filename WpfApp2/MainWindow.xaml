@@ -22,6 +22,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        <Button x:Name="btnTest" Content="click" Click="BtnTest_Click"/>
+
         <Button x:Name="btn_department_sales" Click="Btn_department_sales_Click" Content="Отдел продаж" Grid.Column="1" Grid.Row="1"/>
        
         <Button x:Name="btn_department_accounting" Click="Btn_department_accounting_Click" Content="Бухгалтерский отдел" Grid.Column="1" Grid.Row="3"/>

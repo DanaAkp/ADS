@@ -37,7 +37,8 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new Department_Sales().ShowDialog();
+            this.Hide();
+            new Department_Sales() { Owner = this }.Show();
 
         }
 
@@ -49,7 +50,8 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new Department_Accounting().ShowDialog();
+            this.Hide();
+            new Department_Accounting() { Owner = this }.Show();
 
         }
 
@@ -61,8 +63,15 @@ namespace WpfApp2
                 MessageBox.Show("Нет прав доступа!");
                 return;
             }
-            new Department_Personnel().ShowDialog();
+            this.Hide();
+            new Department_Personnel() { Owner = this}.ShowDialog();
 
+        }
+
+        private void BtnTest_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            new Department_Accounting() { Owner = this }.Show();
         }
     }
 }
